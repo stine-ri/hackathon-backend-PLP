@@ -7,7 +7,7 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:5173', // or your local port if using Vite
-    'https://your-vercel-app.vercel.app'
+    'https://hackathon-frontend-plp.vercel.app/'
   ],
   credentials: true,
 };
