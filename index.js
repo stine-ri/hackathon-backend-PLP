@@ -6,11 +6,12 @@ require("dotenv").config();
 const app = express();
 const corsOptions = {
   origin: [
-    'http://localhost:5173', // or your local port if using Vite
-    'https://hackathon-frontend-plp.vercel.app/'
+    'http://localhost:5173',
+    'https://hackathon-frontend-plp.vercel.app'
   ],
   credentials: true,
 };
+
 
 app.use(cors(corsOptions));
 
