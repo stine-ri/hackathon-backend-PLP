@@ -4,10 +4,10 @@ The backend handles all logic for quizzes, interviews, feedback, user auth, and 
 
 ## 🔗 Quick Links
 
-- ⚙️ Live API: [https://skillsync-api.onrender.com](https://skillsync-api.onrender.com)
-- 🧠 Backend Repo: [https://github.com/stine-ri/skillsync-backend](https://github.com/stine-ri/skillsync-backend)
-- 🌐 Frontend: [https://skillsync.vercel.app](https://skillsync.vercel.app)
-- 💻 Frontend Repo: [https://github.com/stine-ri/skillsync-frontend](https://github.com/stine-ri/skillsync-frontend)
+- ⚙️ Live API: [https://hackathon-backend-plp.onrender.com/](https://hackathon-backend-plp.onrender.com/)
+- 🧠 Backend Repo: [https://github.com/stine-ri/hackathon-backend-PLP.git](https://github.com/stine-ri/hackathon-backend-PLP.git)
+- 🌐 Frontend: [https://hackathon-frontend-plp.vercel.app/](https://hackathon-frontend-plp.vercel.app/)
+- 💻 Frontend Repo: [https://github.com/stine-ri/hackathon-frontend-PLP.git](https://github.com/stine-ri/hackathon-frontend-PLP.git)
 
 ## 🧠 Features
 

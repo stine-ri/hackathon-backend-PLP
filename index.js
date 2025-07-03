@@ -4,7 +4,16 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: [
+    'http://localhost:5173', // or your local port if using Vite
+    'https://your-vercel-app.vercel.app'
+  ],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Mongo connection
