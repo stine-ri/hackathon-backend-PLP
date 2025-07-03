@@ -4,36 +4,34 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+
+// ✅ Fix: No trailing slash and handle preflight properly
 const corsOptions = {
   origin: [
-    'http://localhost:5173',
-    'https://hackathon-frontend-plp.vercel.app'
+    "http://localhost:5173",
+    "https://hackathon-frontend-plp.vercel.app"
   ],
   credentials: true,
 };
 
-
+// ✅ Handle CORS + preflight (must come before any routes)
 app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // handle preflight requests
 
 app.use(express.json());
 
-// Mongo connection
-// Updated Mongo connection without deprecated options
-mongoose.connect(process.env.MONGO_URI, {
-  
-})
-.then(() => console.log("✅ MongoDB Connected"))
-.catch(err => {
-  console.log("❌ Mongo Connection Error:", err);
-});
+// ✅ MongoDB Connection
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch(err => console.log("❌ Mongo Connection Error:", err));
 
-
-// Routes
+// ✅ Routes
 app.use("/api/goals", require("./routes/goal"));
 app.use("/api/resumes", require("./routes/resume"));
 app.use("/api/ai", require("./routes/windsurf"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/quiz", require("./routes/quizRoutes"));
+
 app.get("/", (req, res) => {
   res.send("SkillSync backend is working! 🚀");
 });
