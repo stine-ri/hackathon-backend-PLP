@@ -41,7 +41,7 @@ The backend handles all logic for quizzes, interviews, feedback, user auth, and 
 ## 🛠 Setup
 
 ```bash
-git clone https://github.com/stine-ri/skillsync-backend
+git clone  https://github.com/stine-ri/hackathon-backend-PLP.git
 cd skillsync-backend
 pnpm install
 pnpm run dev
